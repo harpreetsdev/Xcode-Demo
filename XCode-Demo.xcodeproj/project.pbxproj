@@ -79,13 +79,9 @@
 		10A4165A1F5B0A0A00486835 /* XCode-Demo */ = {
 			isa = PBXGroup;
 			children = (
-				10A4165B1F5B0A0A00486835 /* AppDelegate.swift */,
-				10A4165D1F5B0A0A00486835 /* ViewController.swift */,
-				10A4165F1F5B0A0A00486835 /* Main.storyboard */,
-				10A416651F5B0A0A00486835 /* Assets.xcassets */,
-				10A416671F5B0A0A00486835 /* LaunchScreen.storyboard */,
-				10A4166A1F5B0A0A00486835 /* Info.plist */,
-				10A416621F5B0A0A00486835 /* XCode_Demo.xcdatamodeld */,
+				10A4167E1F5C4A0E00486835 /* SupportingFiles */,
+				10A4167F1F5C4A3600486835 /* Controllers */,
+				10A416801F5C4A5000486835 /* Views */,
 			);
 			path = "XCode-Demo";
 			sourceTree = "<group>";
@@ -97,6 +93,34 @@
 				10A416751F5B0A0A00486835 /* Info.plist */,
 			);
 			path = "XCode-DemoTests";
+			sourceTree = "<group>";
+		};
+		10A4167E1F5C4A0E00486835 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				10A4165B1F5B0A0A00486835 /* AppDelegate.swift */,
+				10A416621F5B0A0A00486835 /* XCode_Demo.xcdatamodeld */,
+				10A4166A1F5B0A0A00486835 /* Info.plist */,
+				10A416651F5B0A0A00486835 /* Assets.xcassets */,
+			);
+			name = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		10A4167F1F5C4A3600486835 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				10A4165D1F5B0A0A00486835 /* ViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		10A416801F5C4A5000486835 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				10A4165F1F5B0A0A00486835 /* Main.storyboard */,
+				10A416671F5B0A0A00486835 /* LaunchScreen.storyboard */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -347,11 +371,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = B59S6WSQJH;
 				INFOPLIST_FILE = "XCode-Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "HSR.XCode-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -360,11 +386,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = B59S6WSQJH;
 				INFOPLIST_FILE = "XCode-Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "HSR.XCode-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
